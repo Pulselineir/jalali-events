@@ -1,0 +1,72 @@
+{
+  "name": "pulseline/jalali-events",
+  "description": "A Laravel package for Iranian Jalali calendar events, official holidays, date ranges, and automatic calendar synchronization.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "jalali",
+    "persian-calendar",
+    "iran",
+    "iranian-calendar",
+    "holidays",
+    "official-holidays",
+    "events",
+    "calendar",
+    "time.ir"
+  ],
+  "homepage": "https://github.com/Pulselineir/jalali-events",
+  "authors": [
+    {
+      "name": "Farzin Bidokhti",
+      "email": "pulseline.ir@gmail.com",
+      "homepage": "https://github.com/farzinbidokhti",
+      "role": "Author"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/Pulselineir/jalali-events/issues",
+    "source": "https://github.com/Pulselineir/jalali-events"
+  },
+  "require": {
+    "php": "^8.3",
+    "illuminate/console": "^13.0",
+    "illuminate/database": "^13.0",
+    "illuminate/http": "^13.0",
+    "illuminate/support": "^13.0",
+    "hekmatinasser/verta": "^9.0",
+    "symfony/dom-crawler": "^7.3 || ^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pulseline\\JalaliEvents\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Pulseline\\JalaliEvents\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Pulseline\\JalaliEvents\\JalaliEventsServiceProvider"
+      ],
+      "aliases": {
+        "JalaliEvents": "Pulseline\\JalaliEvents\\Facades\\JalaliEvents"
+      }
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "config": {
+    "sort-packages": true,
+    "optimize-autoloader": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

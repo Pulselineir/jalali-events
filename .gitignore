@@ -1,0 +1,38 @@
+/vendor/
+
+# PHPUnit
+.phpunit.result.cache
+.phpunit.cache/
+
+# Test databases
+/tests/*.sqlite
+/tests/*.sqlite3
+
+# Temporary files
+/tmp/
+/temp/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE / Editors
+.idea/
+.vscode/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Composer local auth
+auth.json
+
+# PHPStorm / temporary
+*.swp
+*.swo
+*~

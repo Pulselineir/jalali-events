@@ -1,0 +1,7 @@
+providers:
+  - Pulseline\JalaliEvents\JalaliEventsServiceProvider
+
+env:
+  - DB_CONNECTION=sqlite
+  - DB_DATABASE=tests/database.sqlite
+  - JALALI_EVENTS_DB_CONNECTION=sqlite
